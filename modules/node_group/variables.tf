@@ -17,7 +17,7 @@ variable "node_type" {
   description = "Node type (size)"
   default     = "cx21" # 2 vCPU, 4 GB RAM, 40 GB Disk space
   validation {
-    condition     = can(regex("^cx11$|^cpx11$|^cx21$|^cpx21$|^cx31$|^cpx31$|^cx41$|^cpx41$|^cx51$|^cpx51$|^ccx11$|^ccx21$|^ccx31$|^ccx41$|^ccx51$", var.node_type))
+    condition     = can(regex("^cax11$|^cax21$|^cax31$|^cax41$|^cx11$|^cpx11$|^cx21$|^cpx21$|^cx31$|^cpx31$|^cx41$|^cpx41$|^cx51$|^cpx51$|^ccx11$|^ccx21$|^ccx31$|^ccx41$|^ccx51$", var.node_type))
     error_message = "Node type is not valid."
   }
 }
