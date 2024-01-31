@@ -24,7 +24,7 @@ variable "node_type" {
 
 variable "image" {
   description = "Node boot image"
-  default     = "ubuntu-20.04"
+  default     = "debian-12"
 }
 
 variable "k3s_token" {
